@@ -1,0 +1,256 @@
+{% extends "template.html" %}
+{% block conteudo %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/news.js') }}"></script>
+{% endblock %}
+
+<div class="containerVideo">
+    <video width="100%" autoplay loop muted playsinline src="../static/src/videos/baner.mp4"></video>
+</div>
+<section class="container container-grid">
+    <h2 class="titleSection">Artigos Importantes</h2>
+    <div class="blck-content-flex-index">
+        <div class="grid-index-col1">
+            
+        </div>
+        <aside class="grid-index-col2">
+            <div class="empty-rectangle"></div>
+            <div class="news-aside">
+                <ul class="ul-col2">
+                </ul>                 
+            </div>
+        </aside>
+    </div>
+    <div class="btn-mais">
+        <a href="{{ url_for('noticias') }}">
+            <button class="bt_principal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
+                <span>Veja mais</span>
+            </button>
+        </a>
+    </div>
+</section>
+<section class="container flex event">
+    <div class="blck-content-flex-event">
+        <div class="sumary-event">
+            <h3 class="titleSection" id="title-event">Próximos Eventos</h3>
+            <p class="desc-new" id="desc-event">
+                Não perca os próximos eventos astronômicos que estão por vir! Desde eclipses impressionantes até chuvas de meteoros deslumbrantes, o céu noturno reserva espetáculos imperdíveis. Prepare-se para maravilhar-se com a dança cósmica dos corpos celestes e testemunhar estrelas cadentes cruzando o firmamento.</p>
+            <div class="btn-mais">
+                <a href="{{ url_for('noticias') }}">
+                    <button class="bt_principal">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
+                        <span>Veja mais</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="content-card">     
+        </div>
+    </div>
+</section>
+<section class="container container-action">
+    <div class="call-to-action">
+        <div class="action-col1">
+            <img src="../static/src/img/Astronaut suit-amico.svg" alt="">
+        </div>
+        <div class="action-col2">
+            <div class="main-action">
+                <span class="title" id="action">Junte-se a nossa equipe</span>
+                <p class="description" id="action">
+                    Junte-se a nossa comunidade de apaixonados por estrelas, planetas e galáxias. Mergulhe em um mundo de descobertas cósmicas, conecte-se com entusiastas como você e expanda seu conhecimento sobre o vasto cosmos.
+                </p>
+            </div>
+            <div class="flex desc-action">
+                <div class="flex desc-colum">
+                    <div class="flex item-desc">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Conteúdo astronomico!</p>
+                    </div>
+                    <div class="flex item-desc">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Comunidade ativa!</p>
+                    </div>
+                    <div class="flex item-desc">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Ferramentas para estudos!</p>
+                    </div>
+                </div>
+                <div class="flex desc-colum">
+                    <div class="flex item-desc">
+                        <i class="fa-solid fa-minus"></i>
+                        <p>Desinformação!</p>
+                    </div>
+                    <div class="flex item-desc">
+                        <i class="fa-solid fa-minus"></i>
+                        <p>Comentários inadequados!</p>
+                    </div>
+                    <div class="flex item-desc">
+                        <i class="fa-solid fa-minus"></i>
+                        <p>Dependência excessiva!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="container-testimonial">
+    <div class="testimonial">
+        <div class="testi-content">
+            <div class="slide" id="slide1">
+                <img src="{{ url_for('static', filename='src/img/stephen hawking.jpg') }}" alt="" class="image">
+                <p>
+                    Dois possíveis futuros estão diante de nós: um em que expandiremos para o universo e um em que nos extinguiremos. Se formos a única espécie viva no universo, sua extinção significará que o universo está morto. Dentro de bilhões de anos, tudo o que fazemos será apagado. Mas se formos a primeira de muitas espécies a colonizar o cosmos, será o começo de uma nova era para a humanidade. Esta é a nossa escolha fundamental: ficar aqui para sempre ou avançar para o desconhecido.
+                </p>
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details">
+                    <span class="name">Stephen Hawking</span>
+                    <span class="job">Físico teórico</span>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="{{ url_for('static', filename='src/img/Carl Sagan.png') }}" alt="" class="image">
+                <p>
+                    A ciência é uma maneira de nos aproximarmos da verdade, desde que estejamos preparados para abandonar qualquer noção pré-concebida, qualquer crença que não seja sustentada por evidências.
+                </p>
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details">
+                    <span class="name">Carl Sagan</span>
+                    <span class="job">Cientista planetário</span>
+                </div>
+            </div>
+            <div class="slide" id="slide3">
+                <img src="{{ url_for('static', filename='src/img/Neil deGrasse Tyson.jpg') }}" alt="" class="image">
+                <p>
+                    Somos todos feitos de poeira de estrelas. Estamos no universo e o universo está dentro de nós.
+                </p>
+                <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                <div class="details">
+                    <span class="name">Neil deGrasse Tyson</span>
+                    <span class="job">Astrofísico</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="container">
+    <h2 class="titleSection">Perguntas Frequentes</h2>
+    <div class = "faq-right-content">
+        <div class = "faq-item">
+            <div class = "faq-item-head">
+                <span class = "faq-item-text">O que é o New Space?</span>
+                <span class = "faq-item-icon">
+                    <i class = "fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class = "faq-item-body">
+                <p>O New Space pode ser considerado uma revista científica de cunho astronômico, no qual é composta de algumas ferramentas que possibilitam maior interatividade com o usuário, preservando o âmbito educacional.</p>
+            </div>
+        </div>
+
+        <div class = "faq-item">
+            <div class = "faq-item-head">
+                <span class = "faq-item-text">Posso compartilhar os artigos do site em minhas redes sociais?</span>
+                <span class = "faq-item-icon">
+                    <i class = "fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class = "faq-item-body">
+                <p>Sim, você pode compartilhar os artigos do site em suas redes sociais. Ficaríamos felizes em ver nosso conteúdo sendo divulgado para um público mais amplo!</p>
+            </div>
+        </div>
+        <div class = "faq-item">
+            <div class = "faq-item-head">
+                <span class = "faq-item-text">O site oferece versão em outros idiomas?</span>
+                <span class = "faq-item-icon">
+                    <i class = "fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class = "faq-item-body">
+                <p>No momento, o site está disponível apenas em [idioma principal]. No entanto, estamos considerando expandir para outros idiomas no futuro.</p>
+            </div>
+        </div>
+        <div class = "faq-item">
+            <div class = "faq-item-head">
+                <span class = "faq-item-text">Como posso fazer sugestões para melhorias no site?</span>
+                <span class = "faq-item-icon">
+                    <i class = "fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class = "faq-item-body">
+                <p>Adoramos receber feedback e sugestões dos nossos visitantes! Se você tiver alguma ideia para melhorar o site, por favor, compartilhe conosco através do formulário de contato ou por e-mail.</p>
+            </div>
+        </div>
+
+        <div class = "faq-item">
+            <div class = "faq-item-head">
+                <span class = "faq-item-text">Como faço para receber atualizações do site?</span>
+                <span class = "faq-item-icon">
+                    <i class = "fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class = "faq-item-body">
+                <p>Você pode se inscrever em nossa newsletter para receber as últimas atualizações do site, incluindo novos artigos, eventos e outras notícias relacionadas à astronomia. Basta preencher o formulário de inscrição com seu nome e endereço de e-mail.</p>
+            </div>
+        </div>
+
+        <div class = "faq-item">
+            <div class = "faq-item-head">
+                <span class = "faq-item-text">Posso contribuir com conteúdo para o site?</span>
+                <span class = "faq-item-icon">
+                    <i class = "fa fa-chevron-down"></i>
+                </span>
+            </div>
+            <div class = "faq-item-body">
+                <p>Estamos sempre abertos a colaborações! Se você tiver um artigo, uma história interessante ou outra forma de contribuição relacionada à astronomia, entre em contato conosco para discutirmos as possibilidades.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container container-newsletter">
+    <div class="flex content-newsletter">
+        <form class="form">
+            <span class="title">Inscreva-se em nossa newsletter.</span>
+            <p class="description">Não perca as últimas novidades e atualizações! Embarque em uma jornada fascinante pelo cosmos e desvende os mistérios da astronomia!
+            </p>
+            <div>
+              <input placeholder="digite seu email" type="email" name="email" id="email-address">
+              <button class="bt_principal" type="submit">Inscrever-se</button>
+            </div>
+        </form>
+        <div class="flex attribute-newsletter">
+            <div class="item-attribute">
+                <div class="icon">
+                    <i class="fa-solid fa-calendar-days icon-tam"></i>
+                </div>
+                <span class="title">Artigos semanais</span>
+                <p class="description">Tenha acesso as últimas descobertas emocionantes no campo da astronomia.</p>
+            </div>
+            <div class="item-attribute">
+                <div class="icon">
+                    <i class="fa-regular fa-hand"></i>
+                </div>
+                <span class="title">Sem spam</span>
+                <p class="description">Livre de spam e com uma experiência de e-mail mais tranquila.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

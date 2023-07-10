@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block conteudo %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/gallery.js') }}" defer></script>
+{% endblock %}
+<div class="ytplayer">
+    <iframe width="85%" height="600" src="https://www.youtube.com/embed/21X5lGlDOfg?autoplay=1&showinfo=0&controls=0&rel=0&modestbranding=0&iv_load_policy=3&disablekb=0&cc_load_policy=0" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+</div>
+<section class="container-media">
+    <label class="search-icon" for="search-input"></label>
+    <div class="search-container">
+        <input
+            type="text"
+            class="search-input"
+            id="search-input"
+            placeholder="Procurar imagens"
+        />
+    </div>
+    <div class="container-gallery"></div>
+    <section id="paginate">
+        <div class="pagination">
+            <div class="first">&#171;</div>
+            <div class="page-action" id="page-previous">&lt;</div>
+            <div class="page" id="page">1</div>
+            <div class="page-action" id="page-next">&gt;</div>
+            <div class="last">&#187;</div>
+        </div>
+    </section>
+</section>
+{% endblock %}

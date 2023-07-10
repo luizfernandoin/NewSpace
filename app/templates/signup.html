@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <form method="POST" action="{{ url_for('cadastrar_user') }}" style="margin-bottom: 15rem !important;">
+        <input type="hidden" name="proxima" value="{{ proxima or url_for('index') }}">
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Cadastre-se<br> e entre para o nosso time</h1>
+                <img src="{{ url_for('static', filename='src/img/metaverso-animate.svg') }}" class="left-login-image" alt="Pessoas">
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>Sign up</h1>
+                    <div class="textfield">
+                        <label for="usuario">Nome</label>
+                        <input type="text" name="nome" placeholder="nome">
+                    </div>
+                    <div class="textfield">
+                        <label for="usuario">Username</label>
+                        <input type="text" name="usuario" placeholder="username">
+                    </div>
+                    <div class="textfield">
+                        <label for="usuario">E-mail</label>
+                        <input type="email" name="email" placeholder="email">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="senha">
+                    </div>
+                    <button class="btn-login">Sign up</button>
+                    <p class="signin">Já tem conta? <a href="{{ url_for('login') }}">Sign in</a> </p>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

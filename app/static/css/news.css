@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards li {
+    width: 400px;
+    height: 350px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+}
+
+.card-reader {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+li > .card-reader img {
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-content {
+    height: 170px;
+    padding: 15px;
+    font-family: sans-serif;
+}
+
+.card-topics a{
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 15px 0;
+
+}
+
+.card-description {
+    font-size: 15px;
+    width: 325px;
+    text-align: justify;
+}
+
+.card-footer {
+    display: block;
+    padding-top: 60px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.card-footer button {
+    cursor: pointer;
+    display: flex;
+    font-size: .6875rem;
+    text-transform: uppercase;
+    background: 0 0;
+    border: 0;
+    color: #222;
+    line-height: 1.5rem;
+    margin-top: 8px;
+}
+
+.cards li:hover {
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-content > .card-title a:hover {
+    text-decoration: underline;
+}
+
+
+/*+ NOTICIAS*/
+.content-post-preview {
+    display: flex;
+    width: 100%;
+    column-gap: 2.5rem;
+    border-bottom: 1px solid #fff;
+    padding: 1.5rem 0;
+    align-items: center;
+}
+
+.content-post-preview > .content-image{
+    overflow: hidden;
+    width: 45%;
+}
+
+.content-post-preview img {
+    width: 400px;
+    height: 250px;;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.content-post-preview img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.post-preview {
+    width: 70%;
+}
+
+.post-preview > a {
+    color: #fff;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.post-preview > a:focus, .post-preview > a:hover {
+    text-decoration: none;
+    color: #0085A1;
+}
+
+.post-title {
+    font-size: 2.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+.post-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.625rem;
+}
+
+.post-preview > .post-meta {
+    font-size: 1.125rem;
+    font-style: italic;
+    margin-top: 0;
+    color: #6c757d;
+}
+.post-preview > .post-meta {
+    font-size: .825rem;
+    text-decoration: none;
+    color: #fff;
+}

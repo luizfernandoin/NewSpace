@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.post-header {
+    width: 100%;
+    height: 500px;
+    background: #111111;
+    padding-top: 6rem !important;
+}
+
+.post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-home {
+    color: #363232;
+    font-size: 0.9rem;
+}
+
+.header-title {
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.post-content {
+    margin-top: 10rem !important;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.post-text {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    column-gap: 1rem;
+    max-height: 30vh;
+    border-top: 2px #000 solid;
+    border-bottom: 2px #000 solid;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    padding: 1rem 1rem;
+}
+
+.autor-post {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.details-autor {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.details-autor .name-autor {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.details-autor .job-autor {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8e7f7f;
+}

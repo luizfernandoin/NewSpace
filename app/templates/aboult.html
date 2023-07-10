@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/aboult.css') }}">
+{% endblock %}
+<section class="container">
+    <main class="conteudo">
+        <div class="header-aboult">
+            <h1 class="titulo">Nós Somos <strong>NewSpace</strong></h1>
+            <p>O maior site de divulgação cientifica do mundo!</p>
+        </div>
+        <div class="conteudo-principal">
+            <img class="conteudo-principal-imagem" src="{{ url_for('static', filename='src/img/aboult-semfundo.png') }}" alt="Logo Comunidade">
+            <div class="conteudo-principal-escrito">
+                <p>"O universo é um infinito de possibilidades."</p>
+                <p>
+                    De cunho academico, o New Space pode ser considerado uma revista científica de cunho astronômico, no qual é composta de algumas ferramentas que possibilitam maior interatividade com o usuário, preservando o âmbito educacional.
+                </p>
+                <p>
+                    Trata-se de uma ferramenta web responsável por tornar a divulgação científica mais acessível e compreensível para o usuário, especialmente em relação aos temas referentes à astronomia. Dessa forma, almeja-se o fornecimento de informações atualizadas e confiáveis ​​sobre descobertas astronômicas recentes, bem como sobre o universo em geral.
+                </p>
+            </div>
+        </div>
+        <div class="footer-aboult header-aboult">
+            <h1 class="titulo">Conheça Nosso <strong>Desenvolvedor</strong></h1>
+            <div class="footer-aboult-main">
+                <img src="{{ url_for('static', filename='src/img/programador.jpeg') }}" alt="">
+                <div class="details">
+                    <span class="name">Luiz Fernando</span>
+                    <span class="job">Idealizador e Desenvolvedor</span>
+                    <div class="details-text">
+                        <p>
+                            Estudante de Análise e Desenvolvimento de Sistemas e Técnico em Informática pelo Instituto Federal de Educação, Ciência e Tecnologia da Paraíba - IFPB, Campus Cajazeiras (2022).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+{% endblock %}

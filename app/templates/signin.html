@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <form method="POST" action="{{ url_for('autenticar') }}">
+        <input type="hidden" name="proxima" value="{{ proxima or url_for('index') }}">
+        
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça login <br> e entre para o nosso time</h1>
+                <img src="{{ url_for('static', filename='src/img/metaverso-animate.svg') }}" class="left-login-image" alt="Pessoas">
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <h1>Sign in</h1>
+                    <div class="textfield">
+                        <label for="usuario">Username</label>
+                        <input type="text" name="usuario" placeholder="username">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="senha">
+                    </div>
+                    <button class="btn-login">Sign in</button>
+                    <p class="signin">Não tem conta? <a href="{{ url_for('signup') }}">Sign up</a> </p>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
