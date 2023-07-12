@@ -31,61 +31,52 @@
         <div class="topHeader">
             <p>New Space, o maior site de divulgação cientifica do mundo!</p>
         </div>
-        <div class="conteiner-logo-header">
-            <div class="mainHeader">
-                <div class="logoHeader">
-                    <a class="" href="{{ url_for('index') }}" tabindex="1">
-                        <img class="navbar-brand" alt="New Space logo" src="{{ url_for('static', filename='src/img/LOGO - New Space.png') }}">
-                    </a>
-                </div>
-                <div id="titleHeader">
-                    <h1>New</h1>
-                    <h1><span>Space</span></h1>
-                </div>
+        <div class="mainHeader">
+            <div class="logoHeader">
+                <a class="" href="{{ url_for('index') }}" tabindex="1">
+                    <img class="navbar-brand" alt="New Space logo" src="{{ url_for('static', filename='src/img/LOGO - New Space.png') }}">
+                </a>
             </div>
-            <div class="menu-section">
-                <div class="menu-toggle">
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
-                </div>
-                <div class="navContainer">
-                    <nav class="navHeader">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="{{ url_for('index') }}"><i class="bi bi-house-door"></i> Home</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="{{ url_for('noticias') }}"><i class="bi bi-file-earmark-text"></i> Noticias</a>
-                            </li>
-        
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="{{ url_for('estude') }}"><i class="bi bi-book"></i> Estude</a>
-                            </li>
-                            
-                            <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery') }}"><i class="bi bi-camera-video"></i> NS Midia</a></li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('missoes') }}"><i class="fa-solid fa-user-astronaut"></i> Missões</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('sobre') }}"><i class="fa-solid fa-exclamation"></i> Sobre</a>
-                            </li>
-                            {% if session['usuario_logado'] %}
-                            <li class="nav-item">
-                              <a class="nav-link" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a>
-                            </li>
-                            {% else %}
-                            <li class="nav-item">
-                              <a class="nav-link" href="{{ url_for('login') }}"><i class="bi bi-box-arrow-in-right"></i> Login</a>
-                            </li>
-                            {% endif %}
-                        </ul>
-                    </nav>
-                </div>
+            <div id="titleHeader">
+                <h1>New</h1>
+                <h1><span>Space</span></h1>
             </div>
+        </div>
+        <div class="navContainer">
+            <nav class="navHeader">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ url_for('index') }}"><i class="bi bi-house-door"></i> Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ url_for('noticias') }}"><i class="bi bi-file-earmark-text"></i> Noticias</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ url_for('estude') }}"><i class="bi bi-book"></i> Estude</a>
+                    </li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('gallery') }}"><i class="bi bi-camera-video"></i> NS Midia</a></li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('missoes') }}"><i class="fa-solid fa-user-astronaut"></i> Missões</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('sobre') }}"><i class="fa-solid fa-exclamation"></i> Sobre</a>
+                    </li>
+                    {% if session['usuario_logado'] %}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('logout') }}"><i class="bi bi-box-arrow-right"></i> Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('login') }}"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -125,7 +116,6 @@
             2023 NewSpace. Todos os direitos reservados!
         </div>
     </footer>
-    <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/testimonials.js') }}"></script>
     <script src="{{ url_for('static', filename='js/faq.js') }}"></script>

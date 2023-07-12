@@ -68,10 +68,6 @@ body {
   padding: 1rem;
 }
 
-.conteiner-logo-header {
-  width: 100%;
-}
-
 h1 span {
   color: rgb(132, 14, 201)
 }
@@ -164,7 +160,6 @@ main {
 }
 
 .titleSection {
-  width: 100%;
   font-family: "Rubik",sans-serif;
   text-align: center;
   font-size: 1.5rem;
@@ -368,7 +363,7 @@ main {
 .news-aside ul li a{
   display: block;
   position: relative;
-  font-size: 0.8rem;
+  font-size: 14px;
   line-height: 22px;
   font-weight: 500;
   color: #000000;
@@ -399,11 +394,10 @@ main {
 
 button.bt_principal {
   display: flex;
-  min-width: 8rem;
   align-items: center;
   font-family: inherit;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 17px;
   padding: 0.8em 1.3em 0.8em 0.9em;
   color: white;
   background: #ad5389;
@@ -459,26 +453,25 @@ button:hover span {
 }
 
 .sumary-event {
+  min-width: 30rem;
   max-width: 30rem;
-  min-height: 30rem;
-  max-height:100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-right: 2.5rem;
 }
 
 .titleSection#title-event {
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 32px;
 }
 
 .desc-new#desc-event {
   font-family: 'Sarala', sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .content-card {
@@ -916,289 +909,4 @@ footer {
   font-size: 0.9rem;
   padding: 1rem;
   font-weight: 100;
-}
-
-@media (max-width: 990px){
-
-  /*HEADER*/
-  .conteiner-logo-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-  }
-
-  #titleHeader {
-    font-size: 16px !important;
-    line-height: 15px !important;
-  }
-
-  .one,
-  .two,
-  .three {
-    background-color: #fff;
-    height: 5px;
-    width: 100%;
-    margin: 6px auto;
-    transition-duration: 0.3s;
-  }
-
-  .menu-toggle {
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-  }
-
-  .menu-section.on {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #7159c1;
-    z-index: 10;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu-section.on nav {
-    display: block;
-  }
-
-  .menu-section.on nav ul a{
-    transition-duration: 0.5s;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    display: block;
-  }
-
-  .menu-section.on .menu-toggle {
-    position: absolute;
-    right: 0;
-    top: 15px;
-  }
-
-  .menu-section.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-  }
-
-  .menu-section.on .menu-toggle .two {
-    opacity: 0;
-  }
-
-  .menu-section.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(8px, -9px);
-  }
-
-  .navHeader {
-    background-color: transparent;
-    border: none;
-  }
-
-  .mainHeader {
-    padding: 0rem;
-    height: auto;
-  }
-
-  .logoHeader {
-    margin-bottom: 0rem;
-  }
-
-  .logoHeader img {
-    width: 50px;
-  }
-
-  #titleHeader {
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  .navContainer nav {
-    display: none;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-link {
-    padding: 0.5rem 0;
-    font-size: 0.9rem;
-  }
-
-  /*EVENTOS*/
-  .blck-content-flex-event {
-    align-items: center;
-  }
-
-  .card-event .summary-event {
-    min-height: 10rem;
-    max-height: 10rem;
-    overflow: hidden;
-  }
-
-  .sumary-event {
-    max-width: 20rem;
-    min-height: 100vh;
-    gap: 1rem;
-    margin-right: 2.5rem;
-  }
-
-  .card-event {
-    min-width: 15rem;
-    max-width: 15rem;
-    min-height: 25rem;
-    max-height: 25rem;
-  }
-
-  .desc-new#desc-event {
-    font-size: 1rem;
-  }
-
-  /*Junte-se a equipe*/
-  .action-col1 {
-    align-self: center;
-  }
-
-  .action-col1 img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .title#action {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  .description {
-    line-height: 1.5rem;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: rgb(209 213 219);
-  }
-}
-
-@media (max-width: 990px){
-  .container-newsletter {
-    min-height: 60vh !important;
-    height: auto !important;
-  }
-
-  .container-newsletter .form {
-    width: 100%;
-  }
-
-  .attribute-newsletter > div {
-    max-width: 50%;
-    width: 50%;
-  }
-
-  .content-newsletter {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 954px) {
-  .grid-index-col2 {
-    display: none;
-  }
-  .blck-content-flex-index {
-    justify-content: center;
-  }
-  .grid-index-col1 {
-    width: 100%;
-    padding: inherit;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-}
-
-@media (max-width: 800px){
-  .container-action {
-    max-height: 200vh !important;
-    min-height: 100vh !important;
-    height: auto;
-  }
-
-  .call-to-action {
-    height: auto;
-    min-height: 50vh !important;
-    max-height: 150vh !important;
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-
-  .action-col1 img {
-    max-width: 70%;
-    height: auto;
-  }
-
-  .action-col1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1/2;
-  }
-
-  .action-col2 {
-    grid-column: 1/2;
-  }
-
-  .main-action {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-    text-align: center;
-  }
-
-  /*EVENTOS*/
-  .blck-content-flex-event {
-    align-items: center;
-  }
-
-  .card-event .summary-event {
-    min-height: 10rem;
-    max-height: 10rem;
-    overflow: hidden;
-  }
-
-  .sumary-event {
-    max-width: 90%;
-    min-height: auto;
-    max-height: 100vh;
-    gap: 1rem;
-    margin-right: 2.5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-  }
-
-  .desc-new#desc-event {
-    font-size: 1.5rem;
-  }
-
-  .blck-content-flex-event {
-    flex-direction: column;
-  }
-  .content-card {
-    overflow-x: hidden;
-    display: flex;
-    margin-left: 20em;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 684px) {
-  .container-grid {
-    height: auto !important;
-  }
-
-  .post-index img {
-    height: 250px;
-  }
 }
