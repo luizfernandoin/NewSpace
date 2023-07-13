@@ -534,13 +534,15 @@ button:hover span {
 /*CHAMADA PARA AÇÃO*/
 
 .container-action {
+  display: flex;
+  align-items: center;
   max-height: 100vh !important;
   height: 100vh;
   padding: 6rem 5rem !important;
 }
 
 .call-to-action {
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 20px;
   display: grid;
@@ -602,7 +604,7 @@ button:hover span {
 }
 
 .action-col1 img {
-  height: 85%;
+  height: 80%;
 }
 
 /*TESTIMONIALS*/
