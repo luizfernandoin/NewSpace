@@ -74,8 +74,9 @@
 }
 
 .footer-aboult-main {
-    width: 33%;
-    min-height: 70vh;
+    display: flex;
+    width: 80%;
+    min-height: auto;
     background-color: rgb(5, 5, 5);
 }
 
@@ -115,4 +116,22 @@
     margin-left: .5rem;
     margin-right: .5rem;
     max-width: 100%;
+}
+
+@media (max-width: 980px){
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .conteudo-principal-escrito {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 702px){
+    .footer-aboult-main {
+        flex-direction: column;
+        max-width: 30rem;
+    }
 }
