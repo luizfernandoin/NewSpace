@@ -279,6 +279,16 @@ a {
         width: 100%;
     }
 
+
+    .content-post-preview .data-event{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-post-preview .link-event{
+        margin-top: 1.5rem;
+    }
+
     .post-preview {
         width: 100%;
     }

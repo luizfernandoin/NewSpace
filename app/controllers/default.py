@@ -23,9 +23,10 @@ def gallery():
 
 @app.route("/missoes")
 def missoes():
-    if session['usuario_logado']:
-        usuario = Users.query.filter_by(username=session['usuario_logado']).first()
-        return render_template('missions.html', user=usuario.id)
+    if 'usuario_logado' in session:
+        if session['usuario_logado']:
+            usuario = Users.query.filter_by(username=session['usuario_logado']).first()
+            return render_template('missions.html', user=usuario.id)
     return render_template('missions.html')
 
 @app.route("/sobre")

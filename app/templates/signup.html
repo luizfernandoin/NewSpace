@@ -1,6 +1,6 @@
 {% extends "template.html" %}
 {% block conteudo %}
-    <form method="POST" action="{{ url_for('cadastrar_user') }}" style="margin-bottom: 15rem !important;">
+    <form method="POST" action="{{ url_for('cadastrar_user') }}">
         <input type="hidden" name="proxima" value="{{ proxima or url_for('index') }}">
         <div class="main-login">
             <div class="left-login">

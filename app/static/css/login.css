@@ -21,11 +21,13 @@ body * {
 
 .main-login {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(#201b2c, #2b134b);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .left-login {

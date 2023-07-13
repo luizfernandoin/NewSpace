@@ -318,7 +318,7 @@ main {
 .post-index img{
   object-fit: cover;
   width: 100%;
-  height: 50%;
+  height: 13.25rem;
 }
 
 .grid-index-col2 {
@@ -1204,6 +1204,10 @@ footer {
 
   .desc-new#desc-event {
     text-align: center;
+  }
+
+  .post-index img{
+    height: 13.25rem;
   }
 }
 
