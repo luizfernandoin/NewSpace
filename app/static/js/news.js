@@ -80,7 +80,7 @@ const loadNews = async () => {
     const col1 = document.querySelector('.grid-index-col1');
     const {results} = await searchNews();
     console.log(results)
-    if (url_ativa === "https://new-space.onrender.com"){
+    if (url_ativa === "https://new-space.onrender.com/"){
         const cards1 = results.map((item, index) => createCard(item, "col1"));
         col1.replaceChildren(...cards1.slice(0, 4));
         const cards2 = results.map((item, index) => createCard(item, "col2"));
