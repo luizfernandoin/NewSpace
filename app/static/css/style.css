@@ -197,10 +197,11 @@ main {
   font-family: "Rubik",sans-serif;
   font-size: 1.5rem;
   font-weight: 900;
+  color: #e7dddd;
 }
 
 .title-new:hover {
-  color: rgb(132, 14, 201);
+  color: rgb(83, 94, 241) !important;
   cursor: pointer;
 }
 
