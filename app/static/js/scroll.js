@@ -23,3 +23,6 @@ scroll.addEventListener("mousedown", dragStart);
 scroll.addEventListener("mousemove", dragging);
 scroll.addEventListener("mouseup", dragStop);
 
+scroll.addEventListener("touchstart", dragStart);
+scroll.addEventListener("touchmove", dragging);
+scroll.addEventListener("touchend", dragStop);
