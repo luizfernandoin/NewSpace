@@ -58,7 +58,8 @@
 
 
 .conteudo-principal-imagem {
-    height: 430px;
+    min-height: auto;
+    max-height: 430px;
 }
 
 .footer-aboult {
@@ -123,6 +124,10 @@
         flex-direction: column;
     }
 
+    .conteudo-principal-imagem {
+        max-height: 300px;
+    }
+
     .conteudo-principal-escrito {
         max-width: 100%;
         text-align: center;
@@ -133,5 +138,11 @@
     .footer-aboult-main {
         flex-direction: column;
         max-width: 30rem;
+    }
+}
+
+@media (max-width: 305px){
+    .conteudo-principal-imagem {
+        max-height: 200px;
     }
 }

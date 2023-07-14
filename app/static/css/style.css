@@ -1196,6 +1196,7 @@ footer {
 
   .blck-content-flex-event {
     flex-direction: column;
+    row-gap: 3rem;
   }
 
   .sumary-event {
@@ -1309,5 +1310,12 @@ footer {
     min-height: 5rem;
     max-height: 5rem;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 422px){
+  .desc-action {
+      flex-direction: column;
+      row-gap: 3rem;
   }
 }
