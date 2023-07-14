@@ -8,7 +8,8 @@
 
 ### 🏠 [Homepage](https://github.com/luizfernandoin/NewSpace)
 
-![plot](https://github.com/luizfernandoin/NewSpace/tree/main/app/static/src/img/site.png?raw=true)
+![plot](https://github.com/luizfernandoin/NewSpace/blob/main/app/static/src/img/site.png?raw=true)
+
 
 ## Table of Contents 
 - [Description](#description)
@@ -98,7 +99,7 @@ python run.py
 * CSS
 * JavaScript
 
-<img src="https://github.com/luizfernandoin/NewSpace/tree/main/app/static/src/img/site1.png?raw=true"/>
+<img src="https://github.com/luizfernandoin/NewSpace/blob/main/app/static/src/img/site1.png?raw=true"/>
 
 ## Desenvolvedores
 👤 **Luiz Fernando**
