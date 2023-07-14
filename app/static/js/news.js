@@ -80,12 +80,12 @@ const loadNews = async () => {
     const col1 = document.querySelector('.grid-index-col1');
     const {results} = await searchNews();
     console.log(results)
-    if (url_ativa === "https://new-space.onrender.com/"){
+    if (url_ativa === "http://127.0.0.1:5000/"){
         const cards1 = results.map((item, index) => createCard(item, "col1"));
         col1.replaceChildren(...cards1.slice(0, 4));
         const cards2 = results.map((item, index) => createCard(item, "col2"));
         col2.replaceChildren(...cards2.slice(0, 6));
-    } else if (url_ativa === "https://new-space.onrender.com/noticias"){
+    } else if (url_ativa === "http://127.0.0.1:5000/noticias"){
         const plusnews = document.querySelector('.content-plusnews');
         const grid = document.querySelector('.blck-content-grid');
         const cards4 = results.map((item, index) => createCard(item, "grid", index - 3));
@@ -169,12 +169,12 @@ const loadlounch = async () => {
     const url_ativa = window.location.href;
     const {results} = await searchlounch();
     console.log(results)
-    if (url_ativa === "https://new-space.onrender.com/"){
+    if (url_ativa === "http://127.0.0.1:5000/"){
         const container = document.querySelector('.content-card');
         const cards = results.map((item) => createCardEvent(item, "index"));
         const filteredCards = cards.filter(card => card !== undefined); // Filtra os cards nulos
         container.replaceChildren(...filteredCards.slice(0, 6));
-    } else if (url_ativa === "https://new-space.onrender.com/missoes"){
+    } else if (url_ativa === "http://127.0.0.1:5000/missoes"){
         const container = document.querySelector('.conteiner-content-post-preview');
         const cards = results.map((item) => createCardEvent(item, "mission"));
         const filteredCards = cards.filter(card => card !== undefined); // Filtra os cards nulos
