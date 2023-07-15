@@ -100,7 +100,7 @@ python run.py
 * APIs (LL2 and SNAPI)
 * HTML
 * css
-*JavaScript
+* JavaScript
 
 ## Contributors
 
