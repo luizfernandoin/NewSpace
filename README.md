@@ -28,7 +28,7 @@ The same can be considered a scientific journal of an astronomical nature, in wh
 - ⌨&nbsp; Intuitive navigation.
 - 🖼️&nbsp; Attractive design.
 - 📚&nbsp; Educational focus astronomical information.
-- ⚡&nbsp; Fast loading speed. -carregamento.
+- ⚡&nbsp; Fast loading speed.
 - 👩‍💻&nbsp; Information provided from APIs.
 - 🎥&nbsp; Integration with social media.
 - 🔒&nbsp; Security.
@@ -104,7 +104,7 @@ python run.py
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/luizfernandoin"><img src="https://avatars.githubusercontent.com/u/106038535?v=4?s=60" width="60px;" alt="Luiz"/><br /><sub><b>Luiz Fernando</b></sub></a><br /><a href="https://github.com/luizfernandoin/NewSpace/commits?author=luizfernandoin" title="Documentation">💻</a></td>
+      <td align="center" valign="top" width="25%"><a href="https://github.com/luizfernandoin"><img src="https://avatars.githubusercontent.com/u/106038535?v=4?s=60" width="60px;" alt="Luiz"/><br /><sub><b>Luiz Fernando</b></sub></a><br /><a href="https://github.com/luizfernandoin/NewSpace/commits?author=luizfernandoin" title="Documentation">💻</a></td>
     </tr>
   </tbody>
 </table>
