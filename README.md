@@ -18,7 +18,7 @@
 - [Copyright and License](#copyright-and-license)
 
 ### Description
-NewSpace is a web service developed during the Systems Analysis and Development course as a **obrigatório** requirement of the Markup Languages course at the Federal Institute of Education, Science and Technology of Paraíba.
+NewSpace is a web service developed during the Systems Analysis and Development course as a **required** requirement of the Markup Languages course at the Federal Institute of Education, Science and Technology of Paraíba.
 The same can be considered a scientific journal of an astronomical nature, in which it is composed of some tools that allow greater interactivity with the user, preserving the educational scope. Furthermore, the user is able to view relevant astronomical information, such as news, events, images and videos.
 
 ### Features
@@ -37,72 +37,78 @@ The same can be considered a scientific journal of an astronomical nature, in wh
 
 
 ### Installation
-Para utilizar o NewSpace localmente, basta clonar esse repositorio utilizando
+To use NewSpace locally, just clone this repository using
 ```jsx
-// Precisa ter o git instalado!
+// Need to have git installed!
 git clone https://github.com/luizfernandoin/NewSpace.git
 ```
-ou baixando um arquivo ZIP do código.
+or by downloading a ZIP file of the code.
 
 ### Configuration
 Here's a summary of how to configure the app:
-* **1º Passo** : O repositório, se baixado como um arquivo .zip, precisará ser extraído para o local de sua preferência e aberto;
-* **2º Passo** : Vá para o diretório raiz do projeto e crie um ambiente virtual;
-```jsx
-// Criar venv
-python -m venv nome-do-ambiente
+* **Step 1** : The repository, if downloaded as a .zip file, will need to be extracted to your preferred location and opened;
+* **2nd Step** : Go to the root directory of the project and create a virtual environment;
+``` jsx
+// create venv
+python -m venv environment-name
 
-// Ativar
+// activate
 cd .\venv\Scripts\
 
 .\activate
 ```
 
-* **3º Passo** : Faça o download de todas as dependencias e bibliotecas obrigatorias para o funcionamento do projeto. No terminal, execute os comandos 
-```jsx
-// Todas as dependencias estão no requirements.txt
+* **3rd Step** : Download all dependencies and libraries required for the project to work. In the terminal, run the commands
+``` jsx
+// All dependencies are in requirements.txt
 pip install -r requirements.txt
 ```
-* **4º Passo** : Modifique as configurações do arquivo **`.env`** com suas informações de banco de dados.
-```jsx
+* **Step 4** : Modify the file settings **`.env`** with your database information.
+``` jsx
 // .env
-SECRET_KEY= 'sua-chave-de-segurança'
-USUARIO= 'usuario-do-banco'
-SENHA= 'senha-do-banco'
-DATABASE= 'nome-do-banco-de-dados'
+SECRET_KEY= 'your-security-key'
+USER= 'bank-user'
+PASSWORD= 'bank-password'
+DATABASE= 'database-name'
 ```
-* **5º Passo** : Para realizar as configurações de banco de dados, basta codar os seguintes comandos:
-```jsx
-// Criação de uma migração inicial
+* **5th Step** : To perform the database settings, just code the following commands:
+``` jsx
+// Creating an initial migration
 flask db init
 
-// Geração de migrações subsequentes
-flask db migrate -m "Descrição da migração"
+// Generation of subsequent migrations
+flask db migrate -m "Migration description"
 
-// Aplicação das migrações
+// Application of migrations
 flask db upgrade
 ```
-* **6º Passo** : Agora você pode iniciar o aplicativo localmente executando o comando
-```jsx
+* **Step 6** : Now you can launch the application locally by running the command
+``` jsx
 python run.py
-``` 
-* Abra o navegador de sua preferência e visualize o aplicativo abrindo o link **http://127.0.0.1:5000/**.
+```
+* Open the browser of your choice and view the application by opening the link **http://127.0.0.1:5000/**.
 
 # Technologies used
 * Python 3+
-* Pip
-* PostgresSQL  
+* pip
+* PostgresSQL
 * Venv
 * Flask
-* APIs (LL2 e SNAPI)
+* APIs (LL2 and SNAPI)
 * HTML
-* CSS
-* JavaScript
+* css
+*JavaScript
 
+## Contributors
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/luizfernandoin"><img src="https://avatars.githubusercontent.com/u/106038535?v=4?s=60" width="60px;" alt="Luiz"/><br /><sub><b>Luiz Fernando</b></sub></a><br /><a href="https://github.com/luizfernandoin/NewSpace/commits?author=luizfernandoin" title="Documentation">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+## Show your support
+Give a ⭐️ if this project helped you!
 <img src="https://github.com/luizfernandoin/NewSpace/blob/main/app/static/src/img/site1.png?raw=true"/>
-
-## Desenvolvedores
-👤 **Luiz Fernando**
-
-## Mostre seu apoio
-Dê um ⭐️ se esse projeto te ajudou!
