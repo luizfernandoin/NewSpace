@@ -15,7 +15,7 @@
 - [Description](#description)
 - [Features](#features)
 - [Installation](#installation)
-- [Configuration](#configuration) Technologies used
+- [Configuration](#configuration)
 - [Technologies used](#technologies-used)
 - [Contributors](#contributors)
 - [Show your support](#Show-your-support)
