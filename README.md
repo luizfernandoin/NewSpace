@@ -6,7 +6,7 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://github.com/luizfernandoin/NewSpace)
+# 🏠 [Homepage](https://github.com/luizfernandoin/NewSpace)
 
 ![plot](https://github.com/luizfernandoin/NewSpace/blob/main/app/static/src/img/site.png?raw=true)
 
@@ -14,14 +14,17 @@
 ## Table of Contents 
 - [Description](#description)
 - [Features](#features)
-- [Installation and Configuration](#installation-and-configuration)
-- [Copyright and License](#copyright-and-license)
+- [Installation](#installation)
+- [Configuration](#configuration) Technologies used
+- [Technologies used](#technologies-used)
+- [Contributors](#contributors)
+- [Show your support](#Show-your-support)
 
-### Description
+## Description
 NewSpace is a web service developed during the Systems Analysis and Development course as a **required** requirement of the Markup Languages course at the Federal Institute of Education, Science and Technology of Paraíba.
 The same can be considered a scientific journal of an astronomical nature, in which it is composed of some tools that allow greater interactivity with the user, preserving the educational scope. Furthermore, the user is able to view relevant astronomical information, such as news, events, images and videos.
 
-### Features
+## Features
 
 - 🚀 Space exploration
 - 📱&nbsp; Responsive for different types of devices.
@@ -36,7 +39,7 @@ The same can be considered a scientific journal of an astronomical nature, in wh
 - 📝&nbsp; News, media and updates.
 
 
-### Installation
+## Installation
 To use NewSpace locally, just clone this repository using
 ```jsx
 // Need to have git installed!
@@ -44,7 +47,7 @@ git clone https://github.com/luizfernandoin/NewSpace.git
 ```
 or by downloading a ZIP file of the code.
 
-### Configuration
+## Configuration
 Here's a summary of how to configure the app:
 * **Step 1** : The repository, if downloaded as a .zip file, will need to be extracted to your preferred location and opened;
 * **2nd Step** : Go to the root directory of the project and create a virtual environment;
@@ -88,7 +91,7 @@ python run.py
 ```
 * Open the browser of your choice and view the application by opening the link **http://127.0.0.1:5000/**.
 
-# Technologies used
+## Technologies used
 * Python 3+
 * pip
 * PostgresSQL
