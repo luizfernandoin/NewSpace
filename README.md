@@ -18,7 +18,7 @@
 - [Configuration](#configuration)
 - [Technologies used](#technologies-used)
 - [Contributors](#contributors)
-- [Show your support](#Show-your-support)
+- [Show your support](#show-your-support)
 
 ## Description
 NewSpace is a web service developed during the Systems Analysis and Development course as a **required** requirement of the Markup Languages course at the Federal Institute of Education, Science and Technology of Paraíba.
