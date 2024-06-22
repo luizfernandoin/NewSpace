@@ -20,7 +20,6 @@ const searchNews = async()=> {
 
 const createCard = (item, local, cont) => {
     const { image_url, title, summary, url, news_site, published_at } = item;
-    console.log(cont);
     //console.log(links[0].href)
     if (local === "col1") {
         const card = document.createElement('div');
@@ -63,7 +62,6 @@ const createCard = (item, local, cont) => {
         `;
         return card;
     } else if (local === "grid"){
-        console.log('post'+cont)
         const card = document.createElement('div');
         card.classList.add('post'+cont);
         card.innerHTML = `
@@ -79,7 +77,6 @@ const loadNews = async () => {
     const col2 = document.querySelector('.ul-col2');
     const col1 = document.querySelector('.grid-index-col1');
     const {results} = await searchNews();
-    console.log(results)
     if (url_ativa === "http://127.0.0.1:5000/"){
         const cards1 = results.map((item, index) => createCard(item, "col1"));
         col1.replaceChildren(...cards1.slice(0, 4));
@@ -168,7 +165,6 @@ const createCardEvent = (item, local) => {
 const loadlounch = async () => {
     const url_ativa = window.location.href;
     const {results} = await searchlounch();
-    console.log(results)
     if (url_ativa === "http://127.0.0.1:5000/"){
         const container = document.querySelector('.content-card');
         const cards = results.map((item) => createCardEvent(item, "index"));

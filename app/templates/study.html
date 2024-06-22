@@ -1,4 +1,10 @@
 {% extends "template.html" %}
+
+{% block scripts %}
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/study.js') }}" defer></script>
+{% endblock %}
+
 {% block conteudo %}
 <section class="container" id="card-container">
     <div class="container-study-flex"></div>

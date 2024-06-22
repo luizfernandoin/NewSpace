@@ -1,7 +1,8 @@
 {% extends "template.html" %}
 {% block conteudo %}
 {% block scripts %}
-<script src="{{ url_for('static', filename='js/news.js') }}"></script>
+    {{ super() }}
+    <script src="{{ url_for('static', filename='js/news.js') }}"></script>
 {% endblock %}
 
 <div class="containerVideo">
@@ -150,89 +151,7 @@
 
 <section class="container">
     <h2 class="titleSection">Perguntas Frequentes</h2>
-    <div class = "faq-right-content">
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">O que é o New Space?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>O New Space pode ser considerado uma revista científica de cunho astronômico, no qual é composta de algumas ferramentas que possibilitam maior interatividade com o usuário, preservando o âmbito educacional.</p>
-            </div>
-        </div>
-
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">Posso compartilhar os artigos do site em minhas redes sociais?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>Sim, você pode compartilhar os artigos do site em suas redes sociais. Ficaríamos felizes em ver nosso conteúdo sendo divulgado para um público mais amplo!</p>
-            </div>
-        </div>
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">O site oferece versão em outros idiomas?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>No momento, o site está disponível apenas em [idioma principal]. No entanto, estamos considerando expandir para outros idiomas no futuro.</p>
-            </div>
-        </div>
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">Como posso fazer sugestões para melhorias no site?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>Adoramos receber feedback e sugestões dos nossos visitantes! Se você tiver alguma ideia para melhorar o site, por favor, compartilhe conosco através do formulário de contato ou por e-mail.</p>
-            </div>
-        </div>
-
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">Como faço para receber atualizações do site?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>Você pode se inscrever em nossa newsletter para receber as últimas atualizações do site, incluindo novos artigos, eventos e outras notícias relacionadas à astronomia. Basta preencher o formulário de inscrição com seu nome e endereço de e-mail.</p>
-            </div>
-        </div>
-
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">Posso contribuir com conteúdo para o site?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>Estamos sempre abertos a colaborações! Se você tiver um artigo, uma história interessante ou outra forma de contribuição relacionada à astronomia, entre em contato conosco para discutirmos as possibilidades.</p>
-            </div>
-        </div>
-        
-        <div class = "faq-item">
-            <div class = "faq-item-head">
-                <span class = "faq-item-text">O NewSpace utiliza algum serviço externo?</span>
-                <span class = "faq-item-icon">
-                    <i class = "fa fa-chevron-down"></i>
-                </span>
-            </div>
-            <div class = "faq-item-body">
-                <p>O NewSpace faz uso de serviços externos, como as APIs de notícias e eventos LL2 e SNAPI do TheSpaceDevs. Através da API de notícias, o NewSpace fornece aos usuários acesso a artigos e informações atualizadas sobre descobertas, missões espaciais e avanços científicos na área da astronomia e exploração espacial. Já a API de eventos permite que os usuários acompanhem e participem de eventos relevantes no campo da exploração espacial, como lançamentos de foguetes e conferências. Essa integração com os serviços do TheSpaceDevs enriquece a experiência dos usuários, mantendo-os informados sobre as últimas novidades e atividades no universo da exploração espacial.</p>
-            </div>
-        </div>
-    </div>
+    <div class="faq-right-content"id="faq-right-content"></div>
 </section>
 <section class="container container-newsletter">
     <div class="flex content-newsletter">

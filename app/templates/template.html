@@ -23,7 +23,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/bootstrap-icons.svg"></script>
     <script src="https://kit.fontawesome.com/da218c70e5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -125,11 +124,12 @@
             2023 NewSpace. Todos os direitos reservados!
         </div>
     </footer>
+    {% block scripts %}
     <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/testimonials.js') }}"></script>
     <script src="{{ url_for('static', filename='js/faq.js') }}"></script>
     <script src="{{ url_for('static', filename='js/scroll.js') }}" defer></script>
-    <script src="{{ url_for('static', filename='js/study.js') }}" defer></script>
+    {% endblock %}
 </body>
 </html>
